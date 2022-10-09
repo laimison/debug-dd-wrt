@@ -35,7 +35,7 @@ So it's useful to collect some details before crash, during networking issue, et
 
 `sh /tmp/mon_conn_count.sh &` - writes warning in system log once TCP connection count is more than 2000
 
-`sh /tmp/mon_routes_anomaly.sh &` - write warning in system log once changes in routes detected
+`sh /tmp/mon_routes_anomaly.sh &` - writes warning in system log once changes in routes detected
 
 `sh /tmp/mon_tunnel_1.sh &` - writes warning in system log once first WG tunnel is down
 
