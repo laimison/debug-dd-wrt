@@ -36,9 +36,16 @@ sh /jffs/mon_loadavg.sh &    # writes warning in system log once CPU load averag
 
 sh /jffs/mon_conn_count.sh &    # writes warning in system log once TCP connection count is more than 2000
 
+sh /jffs/mon_internet.sh &    # writes warning in system log once internet is not reachable
+
 sh /jffs/mon_routes_anomaly.sh &    # writes warning in system log once changes in routes detected
 
 sh /jffs/mon_tunnel_1.sh &    # writes warning in system log once first WG tunnel is down
 
 sh /jffs/mon_tunnel_2.sh &    # writes warning in system log once second WG tunnel is down
+
+sh /jffs/mon_tunnel_tcpdump_1.sh &    # writes tcpdump to file once first WG tunnel is down
+
+sh /jffs/mon_tunnel_tcpdump_2.sh &    # writes tcpdump to file once second WG tunnel is down
+
 ```
