@@ -1,14 +1,14 @@
 # Debug DD-WRT
 
-Repository contains methods to investigate sudden reboots, networking issues, resourcing issues etc.
+Repository contains methods to investigate sudden reboots, networking issues, resourcing issues etc
 
 ## Enable remote logging
 
 ### Remote logging client (DD-WRT)
 
 ```
-nvram set klogd_enable=1
 nvram set syslogd_rem_ip=192.168.240.110
+nvram set klogd_enable=1
 ```
 
 ### Remote logging server
